@@ -16,6 +16,13 @@ aboutBtn.addEventListener('click' ,(e)=>{
     scrollElementIntoView(aboutSectionHeight,'smooth');
 })
 
+const introductionBtn = document.querySelector("a[href='#introduction']");
+introductionBtn.addEventListener('click' ,(e)=>{
+    e.preventDefault();  
+    const scrollHeight = document.querySelector(".introduction");
+    scrollInto(scrollHeight);
+});
+
 const projectsBtn = document.querySelector("a[href='#projects']");
 projectsBtn.addEventListener('click' ,(e)=>{
     e.preventDefault();
@@ -23,20 +30,11 @@ projectsBtn.addEventListener('click' ,(e)=>{
     scrollElementIntoView(projectsSectionHeight,'smooth');
 })
 
-const homeBtn = document.querySelector("a[href='#introduction']");
-homeBtn.addEventListener('click' ,(e)=>{
-    e.preventDefault();  
-    const scrollHeight = document.querySelector(".introduction");
-    scrollInto(scrollHeight);
-});
-
 const arrow = document.querySelector(".arrow");
 arrow.addEventListener('click' ,(e)=>{
-    e.preventDefault();  
+    e.preventDefault();
     var aboutSectionHeight = document.querySelector(".about");
-    aboutSectionHeight.scrollIntoView({
-        behavior: 'smooth'
-    }); 
+    scrollElementIntoView(aboutSectionHeight,'smooth');
 });
 
 function scrollInto(scrollHeight) {

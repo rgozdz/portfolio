@@ -1,8 +1,28 @@
+.projects {
+  position: relative;
+  height: calc(100vh - #{$navHeight});
+  width: 100vw;
+  left: 0;
+  top: 100vh;
+  background-color: #222;
+
+  img {
+    width: auto;
+    max-height: 35vh;
+  }
+}
+
 figcaption {
   background-color: black !important;
+  opacity: 0.7;
   font-size: initial !important;
 
-  // button {
-  //   background-color: $mainColor !important;
-  // }
+  a {
+    position: initial !important;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin: 10vh 0;
 }
