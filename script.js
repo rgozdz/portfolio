@@ -13,18 +13,14 @@ const aboutBtn = document.querySelector("a[href='#about']");
 aboutBtn.addEventListener('click' ,(e)=>{
     e.preventDefault();
     var aboutSectionHeight = document.querySelector(".about");
-    aboutSectionHeight.scrollIntoView({
-        behavior: 'smooth',
-    });
+    scrollElementIntoView(aboutSectionHeight,'smooth');
 })
 
 const projectsBtn = document.querySelector("a[href='#projects']");
 projectsBtn.addEventListener('click' ,(e)=>{
     e.preventDefault();
-    var aboutSectionHeight = document.querySelector(".projects");
-    aboutSectionHeight.scrollIntoView({
-        behavior: 'smooth'
-    });
+    var projectsSectionHeight = document.querySelector(".projects");
+    scrollElementIntoView(projectsSectionHeight,'smooth');
 })
 
 const homeBtn = document.querySelector("a[href='#introduction']");
@@ -90,4 +86,23 @@ window.addEventListener("scroll", function(){
 setTimeout(changeTitle, 1500);
 setTimeout(() => {setInterval(changeTitle, 3000)}, 1500);
 
+
+/** Scrolls the element into view
+ * Manually created since Safari does not support the native one inside an iframe
+*/
+const scrollElementIntoView = (element, behavior) => {
+
+    let scrollTop = window.pageYOffset || element.scrollTop
+  
+     // Furthermore, if you have for example a header outside the iframe 
+     // you need to factor in its dimensions when calculating the position to scroll to
+     const headerOutsideIframe = window.parent.document.getElementsByClassName('navigation')[0].clientHeight
+  
+    const finalOffset = element.getBoundingClientRect().top + scrollTop - headerOutsideIframe
+  
+    window.parent.scrollTo({
+      top: finalOffset,
+      behavior: behavior || 'auto'
+    })
+  }
 

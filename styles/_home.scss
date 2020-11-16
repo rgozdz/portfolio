@@ -1,0 +1,122 @@
+.introduction {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  /* background-image: url('img/main1.jpg');
+  background-attachment: scroll;
+  background-size: cover; */
+  background-color: $mainColor;
+}
+
+.introduction .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  height: 2.5em;
+  width: 100%;
+}
+
+.words-wrapper {
+  /* display: inline-block; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  font-size: 2em;
+  height: 100%;
+  overflow: hidden;
+  animation: wrappingWords 3s infinite ease;
+}
+
+.words-wrapper b {
+  /* display: inline-block; */
+  white-space: nowrap;
+  /* position: absolute; */
+  height: 100%;
+  margin-left: 5px;
+  top: 0;
+  left: 0;
+}
+
+.words-wrapper::after {
+  content: '';
+  position: absolute;
+  border: 2px solid white;
+  height: 100%;
+  top: 0;
+  right: 0;
+  backface-visibility: hidden;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: inline-block;
+}
+
+.pulse {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 5em;
+  animation: arrowPulse 1s alternate infinite;
+  cursor: pointer;
+  color: white;
+  font-size: 2em;
+}
+
+@keyframes wrappingWords {
+  0% {
+    max-width: 500px;
+  }
+
+  48% {
+    max-width: 4px;
+  }
+
+  50% {
+    max-width: 4px;
+  }
+
+  52% {
+    max-width: 4px;
+  }
+
+  100% {
+    max-width: 500px;
+  }
+}
+
+@keyframes arrowPulse {
+  from {
+    transform: translateY(50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.pipe {
+  display: inline;
+  animation: pipeAnimation 1s infinite steps(2);
+}
+
+@keyframes pipeAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

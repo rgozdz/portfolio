@@ -1,0 +1,75 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $navHeight;
+  width: 100vw;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  z-index: 2;
+  transition: linear height 0.3s, linear background-color 0.3s;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+
+    /* padding-right: 20vw; */
+    li {
+      padding: 20px;
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+
+    &:link {
+      text-decoration: none;
+    }
+
+    &:after {
+      content: "";
+      width: 0;
+      height: .0625rem;
+      background: #fff;
+      position: absolute;
+      top: 90%;
+      left: 0;
+      transition: width linear 0.2s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  border-width: 0;
+  // height: 50px;
+  background-color: #fff;
+
+  ul {
+    padding-left: inherit;
+
+    li {
+      // padding: 10px 20px;
+
+      a {
+        color: #000;
+
+        &:after {
+          background: #000;
+        }
+      }
+    }
+  }
+
+}

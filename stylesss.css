@@ -4,6 +4,10 @@ html {
   min-width: 680px;
 }
 
+main {
+  display: none;
+}
+
 body {
   --mainColor: #fff;
   margin: 0;
@@ -202,8 +206,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #242F3F;
-  z-index: 3;
   overflow: hidden;
+  z-index: 3;
 }
 
 .loader {
@@ -212,7 +216,6 @@ body {
   height: 30px;
   position: relative;
   border: 4px solid #Fff;
-  top: 50%;
   animation: loader 2s infinite ease;
   z-index: 2;
 }
