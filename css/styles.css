@@ -187,6 +187,12 @@
   font-size: 1.2em;
 }
 
+@media (max-width: 860px) {
+  .socials {
+    top: 80%;
+  }
+}
+
 @-webkit-keyframes wrappingWords {
   0% {
     max-width: 500px;
@@ -297,6 +303,7 @@
     top: 50vh;
     left: 90vw;
     width: 30vw;
+    font-size: 0.8em;
   }
 }
 
@@ -346,7 +353,7 @@
 
 .projects {
   position: relative;
-  height: calc(100vh - 70px);
+  height: auto;
   width: 100vw;
   left: 0;
   top: calc(100vh);
@@ -771,6 +778,7 @@ figcaption a {
 @media (max-width: 860px) {
   .neon {
     padding-top: 10vh;
+    font-size: 3.5em;
   }
 }
 
