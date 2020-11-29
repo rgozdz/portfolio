@@ -7,12 +7,17 @@
   background-color: black;
 
   .container {
-    padding-top: 10vh;
+    padding-top: 5vh;
   }
 
-  img {
-    width: auto;
-    max-height: 35vh;
+  [class^="imghvr-"] {
+    background-color: transparent;
+    img {
+      width: auto;
+      max-height: 35vh;
+      object-fit: contain;
+      background-color: transparent;
+    }
   }
 }
 
@@ -28,5 +33,5 @@ figcaption {
 
 .section-title {
   text-align: center;
-  margin: 10vh 0;
+  margin: 5vh 0;
 }

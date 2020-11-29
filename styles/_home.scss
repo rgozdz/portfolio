@@ -74,6 +74,22 @@
   font-size: 2em;
 }
 
+.socials {
+  position: fixed;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5px;
+  .list-socials {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    a {
+      color: white;
+      font-size: 1.2em;
+    }
+  }
+}
+
 @keyframes wrappingWords {
   0% {
     max-width: 500px;
