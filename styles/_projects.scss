@@ -3,8 +3,12 @@
   height: calc(100vh - #{$navHeight});
   width: 100vw;
   left: 0;
-  top: 100vh;
-  background-color: #222;
+  top: calc(100vh);
+  background-color: black;
+
+  .container {
+    padding-top: 10vh;
+  }
 
   img {
     width: auto;

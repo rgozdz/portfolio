@@ -14,6 +14,7 @@ aboutBtn.addEventListener('click' ,(e)=>{
     e.preventDefault();
     var aboutSectionHeight = document.querySelector(".about");
     scrollElementIntoView(aboutSectionHeight,'smooth');
+    neonGlory(target);
 })
 
 const introductionBtn = document.querySelector("a[href='#introduction']");
@@ -35,6 +36,7 @@ arrow.addEventListener('click' ,(e)=>{
     e.preventDefault();
     var aboutSectionHeight = document.querySelector(".about");
     scrollElementIntoView(aboutSectionHeight,'smooth');
+    neonGlory(target);
 });
 
 function scrollInto(scrollHeight) {
@@ -42,7 +44,7 @@ function scrollInto(scrollHeight) {
 }
 
 let activeElement = 1;
-const titles = ["I'm Creative.", "I'm Freelancer.", "I'm Test Developer." , "I'm Rafał Góźdź."]
+const titles = ["I'm Creative.", "I'm Freelancer.", "I'm Developer." , "I'm Rafał Góźdź."]
 
 function changeTitle() {
 
