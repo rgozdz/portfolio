@@ -1,5 +1,5 @@
 .introduction {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -72,6 +72,9 @@
   cursor: pointer;
   color: white;
   font-size: 2em;
+  @media (max-width: 860px) {
+    top: 60%;
+  }
 }
 
 .socials {

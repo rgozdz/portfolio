@@ -298,6 +298,11 @@
     padding-top: 10vh;
     font-size: 3.5em;
   }
+
+  @media (max-width: 480px) {
+    padding-top: 10vh;
+    font-size: 3em;
+  }
 }
 h1 {
   font-weight: 400;
