@@ -29,7 +29,14 @@ projectsBtn.addEventListener('click' ,(e)=>{
     e.preventDefault();
     var projectsSectionHeight = document.querySelector(".projects");
     scrollElementIntoView(projectsSectionHeight,'smooth');
-})
+});
+
+const contactBtn = document.querySelector("a[href='#contact']");
+contactBtn.addEventListener('click' ,(e)=>{
+    e.preventDefault();
+    var projectsSectionHeight = document.querySelector(".contact");
+    scrollElementIntoView(projectsSectionHeight,'smooth');
+});
 
 const arrow = document.querySelector(".arrow");
 arrow.addEventListener('click' ,(e)=>{

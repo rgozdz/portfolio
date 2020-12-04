@@ -1,0 +1,23 @@
+.contact {
+  position: relative;
+  height: calc(100vh - 70px);
+  width: 100vw;
+  left: 0;
+  top: 100vh;
+  padding: 5vh 25vw;
+  background-color: black;
+
+  form{
+    width: 100%;
+  }
+
+  button{
+    background-color: $mainColor;
+    &:hover{
+      background-color: white;
+      color: black;
+    }
+    border-color: white;
+  }
+
+}
