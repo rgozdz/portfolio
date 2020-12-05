@@ -20,7 +20,7 @@
     }
 
     @media (max-width: 860px) {
-      top: 35vh;
+      top: 38vh;
       left: 90vw;
       width: 80vw;
       font-size: 1em;
@@ -38,8 +38,8 @@
 
     .skils-items {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
     }
 
     img {

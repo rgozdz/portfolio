@@ -313,7 +313,7 @@
 
 @media (max-width: 860px) {
   .about .shortage {
-    top: 35vh;
+    top: 38vh;
     left: 90vw;
     width: 80vw;
     font-size: 1em;
@@ -337,10 +337,10 @@
 .about .skils .skils-items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .about .skils img {
@@ -377,7 +377,7 @@
   height: auto;
   width: 100vw;
   left: 0;
-  top: calc(100vh);
+  top: 100vh;
   background-color: black;
 }
 
@@ -410,6 +410,30 @@ figcaption a {
 .section-title {
   text-align: center;
   margin: 5vh 0;
+}
+
+.contact {
+  position: relative;
+  height: calc(100vh - 70px);
+  width: 100vw;
+  left: 0;
+  top: 100vh;
+  padding: 5vh 25vw;
+  background-color: black;
+}
+
+.contact form {
+  width: 100%;
+}
+
+.contact button {
+  background-color: #222;
+  border-color: white;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
 }
 
 .loading-wrapper {
